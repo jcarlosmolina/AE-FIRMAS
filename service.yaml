@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ae-firmas
+  labels:
+    app: ae-firmas
+    app.kubernetes.io/component: ae-firmas
+    app.kubernetes.io/instance: ae-firmas
+    app.kubernetes.io/name: ae-firmas
+    app.kubernetes.io/part-of: ae-app
+    app.openshift.io/runtime: ae-firmas
+spec:
+  selector:
+    app: ae-firmas
+  ports:
+    - protocol: TCP
+      port: 8084
+      targetPort: 8084
