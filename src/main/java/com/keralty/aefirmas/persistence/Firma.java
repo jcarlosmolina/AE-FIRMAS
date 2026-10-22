@@ -20,6 +20,7 @@ import com.keralty.aefirmas.repository.NovedadCTJpaRepository;
 import com.keralty.aefirmas.repository.SolicitudNovedadJpaRepository;
 import com.keralty.aefirmas.service.RespRegionalService;
 import com.keralty.aefirmas.service.SolicitudService;
+import com.keralty.aefirmas.utils.Utilities;
 import io.quarkus.arc.Arc;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -776,7 +777,7 @@ public class Firma extends AbstractAppEntity {
             RespRegional = agent
             */
             try {
-                if (this.getRespRegional().equalsObject(agentInstance)) {
+                if (Utilities.isEqual(this.getRespRegional(), agentInstance)) {
                     returnValue = true;
                 }
             } catch (Exception e) {

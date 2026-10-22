@@ -5471,7 +5471,7 @@ Se requiere que el nuevo estado “Recibido” sea homologado en la pantalla de 
         if (solicituddrvContratanteEsTitular != null) return;
         // Default derivation
         // EFFECT   : drvYaTieneContratante = true AND drvYaTieneTitular = true AND ContratantePersona.TipoIdentificacion = TitularPersona.TipoIdentificacion AND ContratantePersona.NumIdentificacion = TitularPersona.NumIdentificacion
-        solicituddrvContratanteEsTitular = this.getSolicituddrvYaTieneContratante().equals(true) && this.getSolicituddrvYaTieneTitular().equals(true) && this.getContratantePersona().getTipoIdentificacion().equalsObject(this.getTitularPersona().getTipoIdentificacion()) && STDFunctions.areEqual(this.getContratantePersona().getPersonaNumIdentificacion(),this.getTitularPersona().getPersonaNumIdentificacion());
+        solicituddrvContratanteEsTitular = this.getSolicituddrvYaTieneContratante().equals(true) && this.getSolicituddrvYaTieneTitular().equals(true) && Utilities.isEqual(this.getContratantePersona().getTipoIdentificacion(), this.getTitularPersona().getTipoIdentificacion()) && STDFunctions.areEqual(this.getContratantePersona().getPersonaNumIdentificacion(),this.getTitularPersona().getPersonaNumIdentificacion());
     }
 
     /**
