@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: ae-firmas
+  annotations:
+    haproxy.router.openshift.io/timeout: "3m"
+  labels:
+    app: ae-firmas
+    app.kubernetes.io/component: ae-firmas
+    app.kubernetes.io/instance: ae-firmas
+    app.kubernetes.io/name: ae-firmas
+    app.kubernetes.io/part-of: ae-app
+    app.openshift.io/runtime: ae-firmas
+spec:
+  host: ae-firmas-soporte-colsanitas-dev.apps.rm3.7wse.p1.openshiftapps.com
+  to:
+    kind: Service
+    name: ae-firmas
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
