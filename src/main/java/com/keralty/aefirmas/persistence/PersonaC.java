@@ -1014,7 +1014,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvTipoPersonaDerivations();
         } catch (Exception e) {
             value = "";
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvTipoPersona");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvTipoPersona");
         }
         return (value == null ? null : value.trim());
     }
@@ -1117,7 +1117,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvRechazadaDerivations();
         } catch (Exception e) {
             value = false;
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvRechazada");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvRechazada");
         }
         return value;
     }
@@ -1220,7 +1220,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvNombreCompletoDerivations();
         } catch (Exception e) {
             value = "";
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvNombreCompleto");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvNombreCompleto");
         }
         return (value == null ? null : value.trim());
     }
@@ -1239,7 +1239,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvDirCorrespondenciaDerivations();
         } catch (Exception e) {
             value = "";
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvDirCorrespondencia");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvDirCorrespondencia");
         }
         return (value == null ? null : value.trim());
     }
@@ -1258,7 +1258,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvCiudadCorrespondenciaDerivations();
         } catch (Exception e) {
             value = "";
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvCiudadCorrespondencia");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvCiudadCorrespondencia");
         }
         return (value == null ? null : value.trim());
     }
@@ -1277,7 +1277,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvTipoNumDocDerivations();
         } catch (Exception e) {
             value = "";
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvTipoNumDoc");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvTipoNumDoc");
         }
         return (value == null ? null : value.trim());
     }
@@ -1296,7 +1296,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvEdadDerivations();
         } catch (Exception e) {
             value = Long.valueOf(0);
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvEdad");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvEdad");
         }
         return value;
     }
@@ -1315,7 +1315,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvObsContratoDerivations();
         } catch (Exception e) {
             value = "";
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvObsContrato");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvObsContrato");
         }
         return (value == null ? null : value.trim());
     }
@@ -1334,7 +1334,7 @@ public class PersonaC extends AbstractAppEntity {
             value = personaCdrvIMCDerivations();
         } catch (Exception e) {
             value = Double.valueOf(0);
-            org.slf4j.LoggerFactory.getLogger(this.getClass()).error("Definition Class: PersonaC, Attribute: personaCdrvIMC");
+            org.slf4j.LoggerFactory.getLogger(this.getClass()).debug("Definition Class: PersonaC, Attribute: personaCdrvIMC");
         }
         return value;
     }
